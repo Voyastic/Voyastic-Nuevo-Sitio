@@ -204,7 +204,7 @@ box-shadow: inset -1px -109px 25px -98px rgba(0,0,0,0.31);
 .menu nav ul li{display: inline-block;font-family:'titillium_bdbold', sans-serif;margin: 25px 10px 0 30px;color: white; opacity: 1;}
 .menu nav ul{float: right}
 .menu nav a, .menu nav a:visited{text-decoration: none; color: white}
-.menu nav a:hover{border-bottom: 0px solid #ff6600;background: url(../images/rocket.png) no-repeat top left;padding-left: 30px}
+.menu nav a:hover{border-bottom: 0px solid #ff6600;background: url(../images/rocket.png) no-repeat center left;padding-left: 30px;margin-top: -15px}
 .mt{height: 700px}
 .char{margin:150px 0 0 0;}
 .char h1{font-size: 43px; margin: 0 0 30px 0;font-weight: 200; line-height: 100%}
