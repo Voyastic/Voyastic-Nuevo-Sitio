@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+<script src="js/jquery.scrolly.js"></script>
+<script>
+    $(document).ready(function(){
+       $('.parallax').scrolly({bgParallax: true});
+    });
+</script>
+</head>
+<body>
+
+   
+    <section id="story-freext">
+        <article>
+            <div class="container">
+                <div class="four columns logo"><img src="images/logo.png"></div>
+                <div class="eleven columns menu">
+    <nav>
+        <ul>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="index.html#team">OUR TEAM</a></li>
+            <li><a href="index.html#portafolio">PORTAFOLIO</a></li>
+            <li><a href="index.html#contacto">CONTACT US</a></li>
+
+        </ul>
+    </nav></div>
+</div>        
+        </article>
+
+        <div class="parallax" data-velocity="-.1"></div>
+        <div class="parallax" ></div>
+        <div class="parallax"></div>
+        <div class="parallax" data-velocity="-1.5"></div>
+
+    </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <section class="container">
+        <a name="portafolio"></a>
+<section class="" id="portafolio">
+<h1 class="portafolio">This is our work</h1>
+
+<div class="grid">
+ <div class="hoveritem">
+    <a class="open-modal link" href="javascript:void(0)">
+      <div class="hovercontent">
+        <h1>LOCOMOTORA</h1>
+        <h3>3D ANIMATION</h3>
+      </div>
+      <img src="images/locomotora_03.jpg"/>
+    </a>
+    <div class="modal-container dp-none">    
+<div class="modal">
+</div></div>
+  </div>
+   <div class="hoveritem">
+    <a class="open-modal link" href="javascript:void(0)">
+      <div class="hovercontent">
+        <h1>SMILTY</h1>
+        <h3>DIGITAL PAINTING</h3>
+      </div>
+      <img src="images/smilty.jpg"/>
+    </a>
+    <div class="modal-container dp-none">    
+<div class="modal">
+</div></div>
+  </div>
+   <div class="hoveritem">
+    <a class="open-modal link" href="javascript:void(0)">
+      <div class="hovercontent">
+        <h1>LOCOMOTORA</h1>
+        <h3>3D ANIMATION</h3>
+      </div>
+      <img src="images/nylcom.jpg"/>
+    </a>
+    <div class="modal-container dp-none">    
+<div class="modal">
+</div></div>
+  </div>
+   <div class="hoveritem">
+    <a class="open-modal link" href="javascript:void(0)">
+      <div class="hovercontent">
+        <h1>SPOONGO</h1>
+        <h3>INTERFACE DESIGN</h3>
+      </div>
+      <img src="images/spoongo.jpg"/>
+    </a>
+    <div class="modal-container dp-none">    
+<div class="modal">
+</div></div>
+  </div>
+   <div class="hoveritem">
+    <a class="open-modal link" href="javascript:void(0)">
+      <div class="hovercontent">
+        <h1>DON ANTONIO AGUILAR</h1>
+        <h3>3D ANIMATION</h3>
+      </div>
+      <img src="images/antonio.jpg"/>
+    </a>
+    <div class="modal-container dp-none">    
+<div class="modal">
+</div></div>
+  </div>
+   <div class="hoveritem">
+    <a class="open-modal link" href="javascript:void(0)">
+      <div class="hovercontent">
+        <h1>CAPUCCINO BLAST</h1>
+        <h3>3D ANIMATION</h3>
+      </div>
+      <img src="images/blast.jpg"/>
+    </a>
+    <div class="modal-container dp-none">    
+<div class="modal">
+</div></div>
+  </div>
+   <div class="hoveritem">
+    <a class="open-modal link" href="javascript:void(0)">
+      <div class="hovercontent">
+        <h1>LOCOMOTORA</h1>
+        <h3>3D ANIMATION</h3>
+      </div>
+      <img src="images/locomotora_03.jpg"/>
+    </a>
+    <div class="modal-container dp-none">    
+<div class="modal">
+</div></div>
+  </div>
+   <div class="hoveritem">
+    <a class="open-modal link" href="javascript:void(0)">
+      <div class="hovercontent">
+        <h1>LOCOMOTORA</h1>
+        <h3>3D ANIMATION</h3>
+      </div>
+      <img src="images/locomotora_03.jpg"/>
+    </a>
+    <div class="modal-container dp-none">    
+<div class="modal">
+</div></div>
+  </div>
+
+ 
+</div>
+<script>
+     var body = $('body'),
+    main = $('.main'),
+    open_modal = $('.open-modal'),
+    close_modal = $('.close-modal'),
+    modal_container = $('.modal-container'),
+    toggleModal = function() 
+ {
+        body.toggleClass('body-locked');
+        modal_container.toggleClass('dp-block');
+
+   var imagenx = $(this).children("img");
+   
+ 
+   if(imagenx !=undefined)
+   {
+     var direccion = imagenx.attr("src");
+    
+     $(".modal").html("<img src=\"x"+direccion+"\" alt=''\"/>");
+     $(".modal").children("img").hide();
+     $(".modal").children("img").fadeIn(1000, function(){
+      $(".modal-container").scrollTop( 0);
+     });
+     
+   }
+    };
+ open_modal.on('click', toggleModal);
+ modal_container.on('click',toggleModal);
+ </script>
+</section>
+</section>
+<a name="team"></a>
+<section class="team"><section class="container">
+<div class="sixteen columns">
+<div class="meet">
+<h2>MEET THE TEAM</h2></div>
+</div></section>
+
+
+</section>
+</header>
+<section class="container mt">
+  <br>
+<div class="eight columns char">
+  <div class="detail" id="zero"><h1 class="portafolio">Lorem ipsum dolor<br> consectetur adisps</h1>
+  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing astaradnda estius salamsi</h2>
+  <img src="images/flecha.png"></div>
+<div class="detail" id="first">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Alejandro Lomas <br>
+<em>Director General<em></h1>
+  <p>Ni más ni menos que el mero mero, el Director General de Voyastic, el cual disfruta de los Domingos de golf, tocar el piano y componer le sale bastante bien, además, le encanta el jazz.<br><br>
+Creativo y visionario, es el que le sabe al “bisne”.
+Como capitán de esta nave espacial dirige los viajes directo a la innovación.
+
+Pretende ir de travesía a las montañas. Un espíritu rebelde y aventurero que gusta del whisky “on da rocks”</p></div>
+</div>
+
+<div class="detail" id="second">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Romina<br><em>Community Manager<em></h1>
+  <p>Admira la expresión que brota del baile, lo considera un mágico catalizador.
+Administra el alfabeto con puntos y comas en las redes sociales.
+Amante del buen café con dos de azúcar, una de vez en cuando.<br><br>
+Admira las labores altruistas y los éxitos de los 80’s.
+Fan de la creatividad y las emociones. Disfruta las 8 horas laborales y sin duda se divierte. Bastante.
+<br><br>Considera indispensable rodearse de personas con calidad humana, talentosas y creativas. Además planea tener un Camaro amarillo.</p></div>
+</div>
+
+<div class="detail" id="third">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Andrea Ameneyro <br><em>Diseño Web<em></h1>
+  <p>Seguidora del cine de muertos vivientes y adicta a los libros.
+Entusiasta autodidacta, open mind e inquieta que se dejó llevar por el mundo del diseño web, chamba que desarrolla en Voyastic.
+<br><br>En sus planes está viajar a Sudamérica y Canadá.Le gusta escuchar música cuando lee y tiene predilección por el color naranja.
+La pizza y los zapatos son su irresistible delirio. </p></div>
+</div>
+
+<div class="detail" id="four">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Oscar Gil<br><em>Diseñador<em></h1>
+  <p>Él, toca la guitarra y el bajo eléctrico, le gusta la música, de todo tipo. Variadito pues.
+<br><br>Es un diseñador gráfico, simpaticón, trabajador bailarín y dicharachero. Se especializa en el diseño corporativo.
+<br><br>Quiere tener una granja cuando sea grande.
+Le gusta el color rosa salvaje y las alitas de pollo.  </p></div>
+</div>
+<div class="detail" id="five">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Tomás Salazar<br><em>Diseñador<em></h1>
+  <p>Él, toca la guitarra y el bajo eléctrico, le gusta la música, de todo tipo. Variadito pues.
+<br><br>Es un diseñador gráfico, simpaticón, trabajador bailarín y dicharachero. Se especializa en el diseño corporativo.
+<br><br>Quiere tener una granja cuando sea grande.
+Le gusta el color rosa salvaje y las alitas de pollo.  </p></div>
+</div>
+<div class="detail" id="six">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Ricardo Torres<br><em>Diseñador 3D<em></h1>
+  <p>El mas alto de todo el crew. Apasionado del arte, el cine y el teatro. Da vida a la creatividad mediante las técnicas de diseño y animación 3D. <br><br>
+Con su sonrisa alegre conquista sus sueños y también a las chicas. Picarón.
+Quiere dejar su huella en Marte. Sí, de verdad quiere ir a Marte en 30 frames.
+<br><br>
+Shila, la pequeña y fiel acompañante es su adoración. Le gusta el color azul y las garnachitas lo hacen feliz. </p></div>
+</div>
+<div class="detail" id="seven">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Alejandro Rodríguez<br><em>Director de Tecnología<em></h1>
+  <p>Fiel seguidor de los deportes extremos, entre más peligrosos, mejor. Conquistado por el universo científico y sus derivados, la tecnología es su forma de vida.
+<br><br>
+Lo describe la palabra “responsable” y toma la puntualidad muy… muy en serio.
+<br><br>
+Dividido en dos personalidades según la ocasión: serio o creativo, para él, esa es la cuestión.</p></div>
+</div>
+<div class="detail" id="eight">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Paulina Cantú<br><em>Ilustradora<em></h1>
+  <p>Se une a Voyastic como ilustradora tranning que disfruta del arte en todas sus posibles expresiones y formas.
+<br><br>
+Las películas de fantasía son sus predilectas, posee un lado dulce el cual disfruta de hornear pastelillos y escuchar electro-swing.
+<br><br>
+Es very explosive cuando se enoja ¡Cuidado Voyagers!. Le gusta viajar y no tiene un color favorito, sino todos en explosiones de tonos. La cochinita pibil es el punto débil de su paladar.
+<br><br>
+Pinta en acuarela y su meta en la vida es ilustrar ratones en Disney.
+Ha!, y la paz mundial.</p></div>
+</div>
+<div class="detail" id="nine">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Ibar Salazar<br><em>Director de Arte<em></h1>
+  <p>Director de arte cautivado por el ciclismo, le gusta el cine y el rock clásico.
+Se encarga de sacar lo mejor del equipo creativo en Voyastic.
+<br><br>
+La calidad humana y nobleza son distintivos de éste mercadólogo y diseñador gráfico. Si, es versátil.
+Va por el camino pragmático siempre sincero y positivo. Su especialidad, la identidad corporativa.
+<br><br>
+
+Su sueño es rodar una Harley y seguir rocanrolenado después de los 50. </p></div>
+</div>
+<div class="detail" id="ten">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Edgar Gómez<br><em>Artista Digital<em></h1>
+  <p>Edgar “padece” de una especie de ansiedad que lo lleva a detallar perfectamente sus creaciones y no lo vemos como defecto sino como una cualidad. Ama y adora el cine, actualmente gusta de los colores obscuros, esto es variable ya que luego le da por usar colores muy vivos. ¿Será por la ansiedad?
+<br><br>
+Va por el mundo en busca de las mejores enchiladas suizas y desea que su pasión por el arte conceptual lo lleve aquí y allá trabajando para producciones de nombre importante. Ciertamente no es el más paciente del Voyastic team pero su creatividad y ocurrencia lo compensa.</p></div>
+</div>
+
+<div class="detail" id="eleven">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Andrés<br><em>Desarrollador <em></h1>
+  <p>Al parecer no rompe un plato y lo obsesionan los videojuegos.
+Dedicado a hacer páginas web y bases de datos en Voyastic.
+<br><br>
+Víctima de la hiperactividad y le da por investigar cualquier tema cuando se le atraviesa alguna situation.
+Es proactivo, quiere un Aveo y saborea sus mandarinas con mucho “style”.
+Ligeramente despistado, ¿verdad Andrés? … ¿Andrés?</p></div>
+</div>
+<div class="detail" id="twelve">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Luis<br><em>Desarrollador<em></h1>
+  <p>La informática vuelve loco, literalmente, a éste Master Samurai. Seguidor de los videojuegos, que lo llevaron a desarrollar curiosidad por crearlos.
+El diseño de apps móviles para las nuevas tendencias es su tarea en Voyastic.<br><br>
+Lleno de energía vive en el mundo de la imaginación. Pajarea un poco. Su especialidad es la programación y los fotomontajes bochornosos. Cuidado Voyagers!</p></div>
+</div>
+
+</div>
+<div class="seven columns pers triggers">
+<a href="javascript:void" onclick="reveal('first');"><div class="hexa gon p1"  onclick="this.className='profile1'"></div></a>
+<a href="javascript:void" onclick="reveal('second');"><div class="hexa gon p2" onclick="this.className='profile2'"></div></a>
+<a href="javascript:void" onclick="reveal('third');"><div class="hexa gon p3"  onclick="this.className='profile3'"></div></a>
+<a href="javascript:void" onclick="reveal('four');"><div class="hexa gon p4"  onclick="this.className='profile4'"></div></a>  
+<a href="javascript:void" onclick="reveal('five');"><div class="hexa gon p5"  onclick="this.className='profile5'"></div></a>  
+<a href="javascript:void" onclick="reveal('six');"><div class="hexa gon p6"  onclick="this.className='profile6'"></div></a>  
+<a href="javascript:void" onclick="reveal('seven');"><div class="hexa gon p7"  onclick="this.className='profile7'"></div></a>  
+<a href="javascript:void" onclick="reveal('eight');"><div class="hexa gon p8"  onclick="this.className='profile8'"></div></a>  
+<a href="javascript:void" onclick="reveal('nine');"><div class="hexa gon p9"  onclick="this.className='profile9'"></div></a>  
+<a href="javascript:void" onclick="reveal('ten');"><div class="hexa gon p10"  onclick="this.className='profile10'"></div></a>  
+<a href="javascript:void" onclick="reveal('eleven');"><div class="hexa gon p11"  onclick="this.className='profile11'"></div></a>  
+<a href="javascript:void" onclick="reveal('twelve');"><div class="hexa gon p12"  onclick="this.className='profile12'"></div></a>  
+</div>
+<script type="text/javascript">
+if(document.getElementById)
+document.write('<style type="text/css">.detail {float:left;display:none;}#zero {display:block;}<\/style>');
+function reveal(det){
+if(!document.getElementById) return;
+if (!document.getElementsByClassName){
+document.getElementsByClassName = function(cn){
+cn = cn.replace(/ +/g, ' ').split(' ');
+var ar = [], testname = function(n){
+for (var re, i = cn.length - 1; i > -1; --i){
+re = new RegExp('(^|\W)' + cn[i] + '(\W|$)');
+if(!re.test(n)) return false;
+}
+return true;
+}
+for(var d = document.all || document.getElementsByTagName('*'), i = 0; i < d.length; ++i)
+if(testname(d[i].className))
+ar[ar.length] = d[i];
+return ar;
+};
+document.getElementsByClassName.spoof = true;
+}
+for (var d = document.getElementsByClassName('detail'), i = d.length - 1; i > -1; --i)
+d[i].style.display = 'none';
+document.getElementById(det).style.display = 'block';
+if (document.getElementsByClassName.spoof)
+document.getElementsByClassName.spoof = document.getElementsByClassName = null;
+}
+
+
+</script>
+
+
+</div>
+
+</section>
+
+    <footer>
+  <section class="container">
+  <div class="eight columns">
+    <div class="sm">
+    <ul>
+    <li><a href="http://vimeo.com/voyastic"><img src="images/vimeo.png"></a></li>
+    <!--<li><a href=""><img src="images/pinterest.png"></a></li>-->
+    <li><a href="https://twitter.com/voyastic"><img src="images/tw.png"></a></li>
+    <li><a href="https://www.facebook.com/voyastic"><img src="images/fb.png"></a></li>
+    <li><a href="http://www.linkedin.com/company/voyastic"><img src="images/in.png"></a></li>
+    <li><a href="https://www.behance.net/voyastic"><img src="images/be.png"></a></li>
+    </ul>
+    </div>
+  <p class="white">Av. Convención Sur 910,  Jardines de Aguascalientes.<br>
+Aguascalientes Ags. México</p>
+<br>
+<p class="white"><strong>Phone.</strong><br>+52 (449) 146 4262 <br>+52 (449) 146 4282
+</p>
+<br>
+<a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x68;&#x69;&#64;&#118;&#111;&#x79;&#97;&#x73;&#116;&#105;&#x63;&#x2e;&#99;&#x6f;&#109;"><p><strong></strong>&#104;&#x69;&#64;&#118;&#111;&#121;&#x61;&#115;&#116;&#x69;&#99;&#46;&#x63;&#x6f;&#x6d;</strong></p></a>  </div>
+  <div class="eight columns">
+    <br><br>
+    <h3 class="white">Ponte en contacto con nosotros !</h3>
+<a name="contacto"></a>
+<form id="contact" action="enviar_c.php" method="post">
+        <input id="name" type="text" required="" placeholder="NOMBRE" title="Nombre" name="nombre"/>
+        <input id="email" type="email" required="" placeholder="CORREO ELECTR&Oacute;NICO" title="Email" name="correo"/>
+        <input id="telefono" type="text" required="" placeholder="TELÉFONO" title="telefono" name="telefono"/>
+        <textarea id="message" required="" placeholder="MENSAJE" title="mensaje" rows="5" cols="45" name="message"></textarea>
+    <button id="button" name="button" type="submit"> 
+ENVIAR
+    </button> </form>
+  </div>
+</section>
+</footer>
+</body>
+</html>

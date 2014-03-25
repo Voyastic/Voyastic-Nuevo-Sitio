@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title></title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+  <style type="text/css">
+
+
+
+#zero {
+display:none;
+color:red;
+
+}
+</style>
+</head>
+<body>
+<header class="team">
+<section class="container">
+<div class="four columns logo"><img src="images/logo.png"></div>
+<div class="eleven columns menu">
+	<nav>
+		<ul>
+			<li><a href="aboutus.html">ABOUT US</a></li>
+		    <li><a href="team.html">OUR TEAM</a></li>
+			<li><a href="index.html#portafolio">PORTAFOLIO</a></li>
+			<li><a href="index.html#contacto">CONTACT US</a></li>
+
+		</ul>
+	</nav></div>
+</section>
+
+<section class="container">
+<div class="sixteen columns">
+<div class="meet">
+<h2>MEET THE TEAM</h2></div>
+</div>
+</section>
+</header>
+<section class="container mt">
+  <br>
+<div class="seven columns char">
+  <div class="detail" id="zero"><h1 class="portafolio">Lorem ipsum dolor<br> consectetur adisps</h1>
+  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing astaradnda estius salamsi</h2>
+  <img src="images/flecha.png"></div>
+<div class="detail" id="first">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Alejandro Lomas <br>
+<em>Lorem ipsum<em></h1>
+  <p>Ni más ni menos que el mero mero, el Director General de Voyastic, el cual disfruta de los Domingos de golf, tocar el piano y componer le sale bastante bien, además, le encanta el jazz.
+<br>
+Creativo y visionario, es el que le sabe al “bisne”.
+Como capitán de esta nave espacial dirige los viajes directo a la innovación.
+<br>
+Pretende ir de travesía a las montañas. Un espíritu rebelde y aventurero que gusta del whisky “on da rocks”</p></div>
+</div>
+
+<div class="detail" id="second">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Romina</h1>
+  <p>Ni más ni menos que el mero mero, el Director General de Voyastic, el cual disfruta de los Domingos de golf, tocar el piano y componer le sale bastante bien, además, le encanta el jazz.
+<br>
+Creativo y visionario, es el que le sabe al “bisne”.
+Como capitán de esta nave espacial dirige los viajes directo a la innovación.
+<br>
+Pretende ir de travesía a las montañas. Un espíritu rebelde y aventurero que gusta del whisky “on da rocks”</p></div>
+</div>
+
+<div class="detail" id="third">
+<div class="three columns"><img src="images/mar1.png"></div>
+<div class="detalles">
+<h1>Andrea Ameneyro</h1>
+  <p>Ni más ni menos que el mero mero, el Director General de Voyastic, el cual disfruta de los Domingos de golf, tocar el piano y componer le sale bastante bien, además, le encanta el jazz.
+<br>
+Creativo y visionario, es el que le sabe al “bisne”.
+Como capitán de esta nave espacial dirige los viajes directo a la innovación.
+<br>
+Pretende ir de travesía a las montañas. Un espíritu rebelde y aventurero que gusta del whisky “on da rocks”</p></div>
+</div>
+</div>
+<div class="eight columns pers triggers">
+	<a href="javascript:void" onclick="reveal('first');"><div class="hexa gon p1"  onclick="this.className='profile1'"></div></a>
+	<a href="javascript:void" onclick="reveal('second');"><div class="hexa gon p2" onclick="this.className='profile2'"></div></a>
+	<a href="javascript:void" onclick="reveal('third');"><div class="hexa gon p3"  onclick="this.className='profile3'"></div></a>
+<a href="javascript:void" onclick="reveal('four');"><div class="hexa gon p4"  onclick="this.className='profile4'"></div></a>  
+
+  <div class="hexa gon"></div>
+  <div class="hexa gon">a rodriguez</div>
+  <div class="hexa gon"></div>
+  <div class="hexa gon">ibar ibar</div>
+  <div class="hexa gon"></div>
+  <div class="hexa gon">andres</div>
+  <div class="hexa gon">luis</div>
+
+<script type="text/javascript">
+if(document.getElementById)
+document.write('<style type="text/css">.detail {float:left;display:none;}#zero {display:block;}<\/style>');
+function reveal(det){
+if(!document.getElementById) return;
+if (!document.getElementsByClassName){
+document.getElementsByClassName = function(cn){
+cn = cn.replace(/ +/g, ' ').split(' ');
+var ar = [], testname = function(n){
+for (var re, i = cn.length - 1; i > -1; --i){
+re = new RegExp('(^|\W)' + cn[i] + '(\W|$)');
+if(!re.test(n)) return false;
+}
+return true;
+}
+for(var d = document.all || document.getElementsByTagName('*'), i = 0; i < d.length; ++i)
+if(testname(d[i].className))
+ar[ar.length] = d[i];
+return ar;
+};
+document.getElementsByClassName.spoof = true;
+}
+for (var d = document.getElementsByClassName('detail'), i = d.length - 1; i > -1; --i)
+d[i].style.display = 'none';
+document.getElementById(det).style.display = 'block';
+if (document.getElementsByClassName.spoof)
+document.getElementsByClassName.spoof = document.getElementsByClassName = null;
+}
+
+
+</script>
+
+
+</div>
+
+</section>
+
+<footer>
+  <section class="container">
+  <div class="eight columns">
+    <div class="sm">
+    <ul>
+    <li><a href=""><img src="images/vimeo.png"></a></li>
+    <li><a href=""><img src="images/pinterest.png"></a></li>
+    <li><a href=""><img src="images/tw.png"></a></li>
+    <li><a href=""><img src="images/fb.png"></a></li>
+    <li><a href=""><img src="images/in.png"></a></li>
+    <li><a href=""><img src="images/be.png"></a></li>
+    </ul>
+    </div>
+  <p class="white">Av. Convención Sur 910,  Jardines de Aguascalientes.<br>
+Aguascalientes Ags. México</p>
+<br>
+<p class="white"><strong>Phone.</strong><br>+52 (449) 146 4262 <br>+52 (449) 146 4282
+</p>
+  </div>
+  <div class="eight columns">
+    <br><br>
+    <h3 class="white">Ponte en contacto con nosotros !</h3>
+<a name="contacto"></a>
+<form id="contact" action="enviar_c.php" method="post">
+        <input id="name" type="text" required="" placeholder="NOMBRE" title="Nombre" name="nombre"/>
+        <input id="email" type="email" required="" placeholder="CORREO ELECTR&Oacute;NICO" title="Email" name="correo"/>
+        <input id="telefono" type="text" required="" placeholder="TELÉFONO" title="telefono" name="telefono"/>
+        <textarea id="message" required="" placeholder="MENSAJE" title="mensaje" rows="5" cols="45" name="message"></textarea>
+    <button id="button" name="button" type="submit"> 
+ENVIAR
+    </button> </form>
+  </div>
+  </section>
+</footer>
+</body>
+</html>

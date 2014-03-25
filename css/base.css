@@ -1,0 +1,374 @@
+
+
+/* BASIC STYLES */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic);
+
+	
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+/*Text*/
+.espacio{width: 200px;margin: 0px}
+
+/*Index*/
+h1{font-family: 'Source Sans Pro';margin: 20px 0 0px 0px; font-weight: 200; line-height: 110%;color:#ff6600;font-size: 36px}
+.port{-webkit-box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.48);
+-moz-box-shadow:    0px -3px 6px 0px rgba(0, 0, 0, 0.48);
+box-shadow:         0px -3px 6px 0px rgba(0, 0, 0, 0.48);}
+#video{height: 650px; background: url(../images/fondoprov_01.png); box-shadow: 1px 1px 6px ;-moz-box-shadow: 1px 1px 6px rgba(0,0,0,0.8); -webkit-box-shadow:1px 1px 6px rgba(0,0,0,0.8); }
+.detail h3{font-family:'titillium_bdbold';margin: 20px 0 0px 0px; font-weight: 200; line-height: 110%;color:#999;padding-right:60px;text-align: right;font-size: 43px}
+.detail strong{font-family:'titillium_bdbold'; color: #ff6600}
+h1.portafolio{font-family: 'titillium_bdbold';margin: 20px 0 50px 20px; font-weight: 600; font-size: 43px; line-height: 110%;color:#999;}
+.portafolio em{color:#ff6600;font-family: 'titillium_bdbold';margin: 20px 0 50px 20px; font-weight: 600; font-size: 43px; line-height: 110%}
+#portafolio{margin-bottom:100px;}
+.hovercontent h1 {
+  color: white;
+  font-size: 20px;
+  margin:76px 16px 0 0px;
+   font-family:'titilliumlight', sans-serif;
+     font-weight: 200;
+     text-align: right;
+
+}
+.hovercontent h3 {
+color: #fff;
+font-size: 15px;
+margin:-5px 16px 0 0px;
+font-family:'titilliumlight', sans-serif;
+font-weight: 200;
+text-align: right;
+
+}
+
+.grid {
+  display:inline-block;
+  margin: 0 auto;
+  height: auto;
+  font-size: 0;
+  text-align: center;
+
+}
+
+.hoveritem {
+  width: 300px;
+  height: 130px;
+  font-size: 12px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+}
+.hoveritem img {
+  position: relative;
+  z-index: 4;
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  /* This is what was making it slow! booooooo */
+  /*
+  -webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.2s ease-out;
+  -moz-transition: opacity 0.3s ease-out, -moz-transform 0.2s ease-out;
+  -o-transition: opacity 0.3s ease-out, -o-transform 0.2s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.2s ease-out;
+  */
+}
+.hoveritem .link {
+  display: block;
+  height: 100%;
+}
+.hovercontent {
+  position: absolute;
+  z-index: 5;
+  font-family: "Helvetica", Arial, sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  line-height: 24px;
+  filter: alpha(opacity=0);
+  -moz-transform: scale3d(1.3, 1.3, 1) translate3d(0, 10%, 0);
+  -o-transform: scale3d(1.3, 1.3, 1) translate3d(0, 10%, 0);
+  -webkit-transform: scale3d(1.3, 1.3, 1) translate3d(0, 10%, 0);
+  transform: scale3d(1.3, 1.3, 1) translate3d(0,10%,0);
+  
+  -webkit-transition: opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out, -moz-transform 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out, -o-transform 0.2s ease-out;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+.hoveritem{margin: 5px}
+
+.hoveritem .link:hover .hovercontent {
+  opacity: 1;
+
+  -moz-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  -o-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  transform: scale3d(1, 1, 1) translate3d(0,0,0);
+}
+.hoveritem .link:hover img { 
+
+  -webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.2s ease-out;
+  -moz-transition: opacity 0.3s ease-out, -moz-transform 0.2s ease-out;
+  -o-transition: opacity 0.3s ease-out, -o-transform 0.2s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.2s ease-out;
+  -webkit-transform:rotate(2deg) scale(1.1);
+}
+
+/*MODAL*/
+
+.body-locked {
+    overflow: hidden;
+}
+
+.modal-container {
+    display: none;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0; right: 0;
+    z-index: 9999;
+    height: 100%; width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.modal  {
+   
+    margin: 0 auto; display: block
+}
+.modal img {
+    height: auto;
+    width: 600px;
+    margin: 0 auto; display: block
+}
+
+.open-modal{cursor: pointer}
+/*helper styles*/
+
+.dp-none {
+    display: none !important;
+}
+
+.dp-block {
+    display: block !important;
+}
+/*Footer*/
+footer a{text-decoration: none; }
+footer a p:hover{color: #ccc }
+footer a p{font-weight: 400;color: white}
+footer .one{background: #333333; height: 400px}
+footer .header{background: #444; height: 170px;-webkit-box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.48);
+-moz-box-shadow:    0px -3px 6px 0px rgba(0, 0, 0, 0.48);
+box-shadow:         0px -3px 6px 0px rgba(0, 0, 0, 0.48);}
+.header h1{font-family: 'titillium_bdbold'; color: white; font-size: 32px; padding-top: 10px; text-align: left; line-height: 120%}
+.header strong{color:#ff6600;}
+.sm{margin:50px 0 40px 0;}
+.sm img{margin-right: 10px;}
+.sm ul li{list-style: none;display: inline;}
+.dir{margin-top: 60px}
+.dir strong{font-family: 'titillium_bdbold'; color: white; font-size: 26px; font-weight: 200}
+p.white{color: white; font-size: 15px;   font-family:'Source Sans Pro', sans-serif; font-weight: 200}
+h3.white{color: white; font-size: 18px;   font-family:'Source Sans Pro', sans-serif; font-weight: 200}
+strong{font-weight: 400}
+form{margin:20px 0px}
+input{display: block;width: 300px;height: 30px;margin-bottom: 10px;padding-left: 10px;-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px; border: none}
+textarea{display: block;width: 290px;height: 100px;margin-bottom: 10px;padding: 10px;-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;}
+form button{background:#ff6600;color: white; font-size: 25px;   font-family:'titillium_bdbold', sans-serif; font-weight: 200 ; border: 1px solid white ;margin:-250px 0 0 350px; height: 230px; width: 230px;position: absolute;}
+form button:hover{color: white; font-size: 25px;   font-family:'titillium_bdbold', sans-serif; font-weight: 200 ;background:none; border: 4px solid white ;margin:-250px 0 0 350px; height: 230px; width: 230px;position: absolute; background: #ff5500; cursor: pointer;}
+p{ text-align: justify;color: #5e5e5e; font-size: 16px; font-family:'Source Sans Pro', sans-serif; font-weight: 200}
+/*Team*/
+.team{background: url(../images/mt2.jpg) 50% 0 repeat fixed; min-height: 650px; height: 650px; -webkit-box-shadow: inset -1px -109px 25px -98px rgba(0,0,0,0.31);
+-moz-box-shadow: inset -1px -109px 25px -98px rgba(0,0,0,0.31);
+box-shadow: inset -1px -109px 25px -98px rgba(0,0,0,0.31);
+  margin: 0 auto; 
+  width: 100%; 
+  position: relative;}
+.logo img{margin:30px 0 0px 250px; position: absolute; z-index: 99999999;zoom:110%;}
+.meet{border: 3px solid white; height: 100px;width: 650px; margin:260px auto 0 auto; display: block}
+.meet h2{font-family:'titillium_bdbold', sans-serif; font-weight: 700; color: white; text-align: center;font-size: 70px; position: absolute; margin: 0 60px;display: block;}
+.menu{position: fixed;background-color: rgba(0, 0 ,0, 0.5);height: 60px; width: 100%;z-index: 9999}
+.menu nav ul li{display: inline-block;font-family:'titillium_bdbold', sans-serif;margin: 25px 10px 0 30px;color: white; opacity: 1;}
+.menu nav ul{float: right}
+.menu nav a, .menu nav a:visited{text-decoration: none; color: white}
+.menu nav a:hover{border-bottom: 0px solid #ff6600;background: url(../images/rocket.png) no-repeat top left;padding-left: 30px}
+.mt{height: 700px}
+.char{margin:150px 0 0 0;}
+.char h1{font-size: 43px; margin: 0 0 30px 0;font-weight: 200; line-height: 100%}
+.char img{margin: -15px auto; display: block;}
+img.flecha{zoom:80%;margin-top: 15px}
+.char h2{f font-size: 20px; font-weight: 200; color: #5e5e5e}
+.pers{padding-left:0px;}
+.gon {width: 110px;height: 120px}
+.hexa {width: 110px;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)}
+.p1:hover {background:url(../images/lomas.jpg);transition: background 300ms ease;cursor: pointer;}
+.p1{margin: 200px 0 0 60px;background: url(../images/m1.jpg) no-repeat;transition: background 300ms ease}
+.profile1{width: 110px;height:120px;background: url(../images/lomas.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);margin: 200px 0 0 60px;}
+.profile1:hover{background: url(../images/m1.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)}
+
+.p2{background: url(../images/m1.jpg) no-repeat;cursor:pointer;transition: color 300ms ease; margin: -220px 0 0 120px}
+.p2:hover {background:url(../images/romina.jpg);cursor:pointer;transition: background 300ms ease}
+.profile2{width: 110px;height: 120px;background: url(../images/romina.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);margin: -220px 0 0 120px}
+.profile2:hover{background: url(../images/m1.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)}
+
+.p3 {background: url(../images/m3.jpg) no-repeat; transition: color 300ms ease; margin: -20px 0 0 180px}
+.p3:hover {background:url(../images/andrea.jpg);cursor:pointer;transition: background 300ms ease}
+.profile3{width: 110px;height: 120px;background: url(../images/andrea.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); margin: -20px 0 0 180px}
+.profile3:hover{background: url(../images/m3.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); margin: -20px 0 0 180px}
+
+.p4 {background: url(../images/m4.jpg) no-repeat; transition: color 300ms ease;margin: -220px 0 0 240px}
+.p4:hover {background: url(../images/gil.jpg) no-repeat; transition: color 300ms ease}
+.profile4{width: 110px;height:120px;background: url(../images/gil.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);margin: -220px 0 0 240px}
+.profile4:hover{background: url(../images/m4.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);margin: -220px 0 0 240px}
+
+
+.p5 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: 80px 0 0 120px}
+.p5:hover {background: url(../images/tomas.jpg) no-repeat; transition: color 300ms ease}
+.profile5{width: 110px;height:120px;background: url(../images/tomas.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);margin: 80px 0 0 120px}
+.profile5:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+.p6 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: 84px 0 0 130px;margin: -120px 0 0 240px}
+.p6:hover {background: url(../images/ricardo.jpg) no-repeat; transition: color 300ms ease}
+.profile6{width: 110px;height:120px;background: url(../images/ricardo.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: -120px 0 0 240px}
+.profile6:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+.p7 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: -120px 0 0 0px}
+.p7:hover {background:url(../images/rodriguez.jpg);cursor:pointer;transition: background 300ms ease}
+.profile7{width: 110px;height:120px;background: url(../images/rodriguez.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: -120px 0 0 0px}
+.profile7:hover {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease}
+
+.p8 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: -220px 0 0 300px}
+.p8:hover {background:url(../images/pau.jpg);cursor:pointer;transition: background 300ms ease}
+.profile8 {width: 110px;height:120px;background: url(../images/pau.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: -220px 0 0 300px}
+.profile8:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+.p9 {background: url(../images/m2.jpg) no-repeat; transition: color 300ms ease;margin: -220px 0 50px 0px}
+.p9:hover {background:url(../images/ibar.jpg);cursor:pointer;transition: background 300ms ease}
+.profile9 {width: 110px;height:120px;background: url(../images/ibar.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: -220px 0 50px 0px}
+.profile9:hover {background:url(../images/m2.jpg);cursor:pointer;transition: background 300ms ease}
+
+.p10 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: 80px 0 0 360px}
+.p10:hover {background:url(../images/edgar.jpg);cursor:pointer;transition: background 300ms ease}
+.profile10 {width: 110px;height:120px;background: url(../images/edgar.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: 80px 0 0 360px}
+.profile10:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+.p11 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: -20px 0 0 60px}
+.p11:hover {background:url(../images/andres.jpg);cursor:pointer;transition: background 300ms ease}
+.profile11 {width: 110px;height:120px;background: url(../images/andres.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: -20px 0 0 60px}
+.profile11:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+
+.p12 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: -120px 0 0 180px}
+.p12:hover {background:url(../images/luis.jpg);cursor:pointer;transition: background 300ms ease}
+.profile12 {width: 110px;height:120px;background: url(../images/luis.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: -120px 0 0 180px}
+.profile12:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+.detalles h1{font-family:'titilliumlight';font-size: 24px}
+.detalles{ margin-top: 0px; }
+
+.detalles p {font-size: 13px;padding-right: 30px; margin-top: 0px}
+/*About us*/
+#story-freext {
+
+    height: 1000px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+article img{margin: 20px auto;display:block;z-index:4; position: relative;}
+
+article .container{margin: 0px auto;display:block;z-index:4; position: relative}
+
+#story-freext>div:nth-of-type(1) {-webkit-box-shadow: inset -1px -109px 25px -98px rgba(0,0,0,0.31);
+-moz-box-shadow: inset -1px -109px 25px -98px rgba(0,0,0,0.31);
+box-shadow: inset -1px -109px 25px -98px rgba(0,0,0,0.31);
+    background: url(../images/fondo.jpg) 0 no-repeat fixed;
+    margin: 0;
+    height: 1000px;
+    position:absolute;
+    width:100%;
+    top:0;left:0;
+}
+#story-freext>div:nth-of-type(2) {
+
+    background: url(../images/nave.png) 50% 0 no-repeat;
+    margin: 0;
+    height: 1000px;
+    position:absolute;
+    top:365px;left:0px;
+    width:100%;
+}
+
+#story-freext>div:nth-of-type(3) {
+    background: url(../images/nube_02.png) 50% 0 no-repeat;
+    margin: 0;
+    height: 800px;
+    position:absolute;
+    top:0px;left:-250px;
+    width:100%;
+}
+#story-freext>div:nth-of-type(4) {
+    background: url(../images/nube_04.png) 50% no-repeat;
+    margin-left: 990px;
+    position: absolute;
+    float: left;
+    height: 1000px;
+    top:0px;
+    width:40%; }
+#zero {
+display:none;
+color:red;}
+.abus{margin:150px 0 0px 0 ;}
+.abus h1,.abus2 h1{font-size: 43px; margin: 0 0 40px 0;font-weight: 200}
+.ab img{margin: 80px auto 0px auto;display: block}
+h4{font-family:'Source Sans Pro', sans-serif;font-weight: 200;color: #333; font-size: 20px;text-align: center;}
+.servicios img{margin: 0 auto; display: block;}
+.servicios p{font-size: 15px; padding: 0 10px}
+h1 em{font-size: 16px; line-height: 80%}
+
+/*PORTAFOLIO HTML*/
+
+.blast{background: url(../ximages/cblast.jpg) no-repeat; height: 3000px;width: 650px;margin: 0 auto; display:block;}
+.smilty{background: url(../ximages/smiltyf.jpg) no-repeat; height: 2300px;width:650px;margin: 0 auto; display:block;}
+.smilty img{padding-top: 1200px; margin: 0 auto;display: block;width: 490px;height: auto}
+#videoblast{padding-top: 2230px; margin: 0 auto;display: block}
+
+

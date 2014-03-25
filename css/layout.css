@@ -1,0 +1,143 @@
+/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 1280px) {
+    #story-freext>div:nth-of-type(4) {
+    background: url(../images/nube_04.png) 50% no-repeat;
+    margin-left: 690px;
+    position: absolute;
+    float: left;
+    height: 1000px;
+    top:0px;
+    width:40%; }
+  }
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+        body{background-color:green}
+.pers{zoom:80%;}
+       .logo img{margin-top: 10px; margin-left: 140px}
+       .char{margin:90px 0 0 0;}
+.char h1{font-size: 29px; margin: -30px 0 30px 0;font-weight: 200; line-height: 100%}
+.detail img{zoom:70%;}
+footer{height: 400px}}
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+    body{background-color:red}
+  }
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+        body{background-color:blue}
+       .logo img{margin-top: 100px}
+.mt{height: 1300px;}
+.char h1{font-size: 43px; margin: 120px 0 30px 0;font-weight: 200; line-height: 100%}
+.char{position: absolute; padding-top: 590px}
+.pers{zoom:100%; padding-top: 50px}
+.detail img{zoom:80%;}
+footer{height: 800px}
+
+  }
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {    
+    body{background-color:yellow}
+    .menu{font-size: 12px; margin: 0px}
+    .menu nav ul{margin: 10px}
+    .menu nav ul li{margin: 5px 10px;color: white; opacity: 1}
+    .logo img{margin-left: 100px; margin-top: 80px}
+    .meet{height: 60px;width: 300px; margin:170px auto 0 auto; display: block}
+.meet h2{font-size: 35px;}
+.team{height: 400px}
+.mt{height: 1200px;}
+.char h1{font-size: 43px; margin: 40px 0 30px 0;font-weight: 200; line-height: 100%}
+.char{position: absolute; padding-top: 460px}
+.pers{zoom:78%; padding-top: 30px}
+.detail img{zoom:70%;}
+footer{height: 800px}
+
+
+.p1:hover {background:url(../images/lomas.jpg);transition: background 300ms ease;cursor: pointer;}
+.p1{margin: 200px 0 0 13px;background: url(../images/m1.jpg) no-repeat;transition: background 300ms ease}
+.profile1{width: 110px;height:120px;background: url(../images/lomas.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);margin: 200px 0 0 13px;}
+.profile1:hover{background: url(../images/m1.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)}
+
+.p2{background: url(../images/m1.jpg) no-repeat;cursor:pointer;transition: color 300ms ease; margin: -220px 0 0 75px}
+.p2:hover {background:url(../images/romina.jpg);cursor:pointer;transition: background 300ms ease}
+.profile2{width: 110px;height: 120px;background: url(../images/romina.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);margin: -220px 0 0 105px}
+.profile2:hover{background: url(../images/m1.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)}
+
+.p3 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease; margin: -20px 0 0 135px}
+.p3:hover {background:url(../images/andrea.jpg);cursor:pointer;transition: background 300ms ease}
+.profile3{width: 110px;height: 120px;background: url(../images/andrea.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); margin: -20px 0 0 165px}
+.profile3:hover{background: url(../images/m1.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); margin: -20px 0 0 180px}
+
+.p4 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: -220px 0 0 195px}
+.p4:hover {background: url(../images/gil.jpg) no-repeat; transition: color 300ms ease}
+.profile4{width: 110px;height:120px;background: url(../images/gil.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);margin: -220px 0 0 195px}
+.profile4:hover{background: url(../images/m1.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);margin: -220px 0 0 240px}
+
+
+.p5 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: 80px 0 0 75px}
+.p5:hover {background: url(../images/tomas.jpg) no-repeat; transition: color 300ms ease}
+.profile5{width: 110px;height:120px;background: url(../images/tomas.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);margin: 80px 0 0 75px}
+.profile5:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+.p6 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: 84px 0 0 130px;margin: -120px 0 0 195px}
+.p6:hover {background: url(../images/ricardo.jpg) no-repeat; transition: color 300ms ease}
+.profile6{width: 110px;height:120px;background: url(../images/ricardo.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: -120px 0 0 195px}
+.profile6:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+.p7 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: -120px 0 0 -50px}
+.p7:hover {background:url(../images/rodriguez.jpg);cursor:pointer;transition: background 300ms ease}
+.profile7{width: 110px;height:120px;background: url(../images/rodriguez.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: -120px 0 0 -50px}
+.profile7:hover {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease}
+
+.p8 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: -220px 0 0 255px}
+.p8:hover {background:url(../images/pau.jpg);cursor:pointer;transition: background 300ms ease}
+.profile8 {width: 110px;height:120px;background: url(../images/pau.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: -220px 0 0 255px}
+.profile8:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+.p9 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: -220px 0 0px -50px}
+.p9:hover {background:url(../images/ibar.jpg);cursor:pointer;transition: background 300ms ease}
+.profile9 {width: 110px;height:120px;background: url(../images/ibar.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: -220px 0 0px -50px}
+.profile9:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+.p10 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: 80px 0 0 315px}
+.p10:hover {background:url(../images/edgar.jpg);cursor:pointer;transition: background 300ms ease}
+.profile10 {width: 110px;height:120px;background: url(../images/edgar.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: 80px 0 0 315px}
+.profile10:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+.p11 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: -20px 0 0 12px}
+.p11:hover {background:url(../images/andres.jpg);cursor:pointer;transition: background 300ms ease}
+.profile11 {width: 110px;height:120px;background: url(../images/andres.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: -20px 0 0 12px}
+.profile11:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+
+.p12 {background: url(../images/m1.jpg) no-repeat; transition: color 300ms ease;margin: -120px 0 0 135px}
+.p12:hover {background:url(../images/luis.jpg);cursor:pointer;transition: background 300ms ease}
+.profile12 {width: 110px;height:120px;background: url(../images/luis.jpg) no-repeat;transition: background 300ms ease;-webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);-moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+-ms-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+;margin: -120px 0 0 135px}
+.profile12:hover {background:url(../images/m1.jpg);cursor:pointer;transition: background 300ms ease}
+
+}
